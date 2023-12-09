@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/twitter_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        app:srcCompat="@mipmap/ic_air_foreground" />
+
+    <TextView
+        android:id="@+id/login_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/twitter_logo"
+        android:layout_marginStart="20dp"
+        android:textSize="25dp"
+        android:textFontWeight="500"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@color/dark_gray"
+        android:text="Login" />
+
+    <TextView
+        android:id="@+id/login_message2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_message"
+        android:layout_marginStart="20dp"
+        android:textSize="20dp"
+        android:textFontWeight="200"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@color/dark_gray"
+        android:text="Entre na sua conta" />
+
+    <EditText
+        android:id="@+id/et_login_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_message2"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/rounded_input_background"
+        android:backgroundTint="@color/light_gray"
+        android:hint="E-mail"
+        android:inputType="text"
+        android:fontFamily="sans-serif-light"
+        android:padding="10dp"
+        android:textColor="@color/dark_gray"
+        android:textColorHint="@color/dark_gray"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/et_login_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_login_email"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:hint="Senha"
+        android:background="@drawable/rounded_input_background"
+        android:backgroundTint="@color/light_gray"
+        android:textColorHint="@color/dark_gray"
+        android:inputType="textPassword"
+        android:fontFamily="sans-serif-light"
+        android:padding="10dp"
+        android:textColor="@color/dark_gray"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_login_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="40dp"
+        android:text="Entrar "
+        android:fontFamily="sans-serif-light"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/blue"
+        android:textColor="@color/dark_gray"
+        android:textSize="18sp" />
+
+<!--    <Button-->
+<!--        android:id="@+id/btn_create_account"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/btn_login"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginTop="40dp"-->
+<!--        android:background="@color/white"-->
+<!--        android:backgroundTint="@color/white"-->
+<!--        android:foregroundTint="@color/white"-->
+<!--        android:text="Não tem uma conta?"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textSize="16sp" />-->
+
+    <TextView
+        android:id="@+id/sep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="OU"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:textColor="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/btn_create_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sep"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Criar uma conta"
+        android:textAllCaps="false"
+        android:fontFamily="sans-serif-light"
+        android:textSize="16sp"
+        android:textColor="@android:color/holo_blue_dark"
+        android:clickable="true"
+        android:textColorLink="@android:color/holo_blue_dark" />
+
+
+</RelativeLayout>

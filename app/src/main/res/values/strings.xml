@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Airq</string>
+    <!-- to toggle the open close button of the navigation drawer -->
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
+
+    <string name="menu_device">Cadastrar dispositivo</string>
+    <string name="menu_edit">Editar perfil</string>
+    <string name="menu_logout">Sair</string>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Set the background color of the activity and other UI elements to white -->
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:background">@android:color/white</item>
+    </style>
+</resources>
